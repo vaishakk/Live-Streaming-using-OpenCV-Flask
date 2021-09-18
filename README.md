@@ -38,3 +38,5 @@ Now just run the flask app to activate the webserver. \
 <code>
 	python app.py
 </code>
+
+Go to localhost:8848/login
