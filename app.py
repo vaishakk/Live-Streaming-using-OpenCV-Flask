@@ -50,6 +50,7 @@ def logout():
     return 'Logged out'
 
 @app.route('/video_feed')
+@flask_login.login_required
 def video_feed():
     #Video streaming route. Put this in the src attribute of an img tag
     return Response(feed_frame(), mimetype='multipart/x-mixed-replace; boundary=frame')
