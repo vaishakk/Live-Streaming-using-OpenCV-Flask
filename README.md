@@ -1,28 +1,36 @@
-# Live-Streaming-using-OpenCV-Flask
-A Flask Web-App to stream live from local webcam or CCTV (rtsp link)
+# Secure Live Streaming of webcam footage using OpenCV and flask
+A Flask Web-App to stream live from local webcam. Users can added with username and passowrd to enable secure login. Only logged in users can view the stream.
 
-## Use Built-in Webcam of Laptop
+## How to?
+On the server, make sure the webcam is connected and working. 
+### Start a new virtualenv
+If virtualenv not installed, install it.
+<code>
+	pip install virtualenv
+</code>
 
-### Put Zero (O) in cv2.VideoCapture(0)
+Start a new env
+<code>
+	python virtualenv /path/to/env
+</code>
 
-``` cv2.VideoCapture(0) ```
+Install dependencies
 
-### Use Ip Camera/CCTV/RTSP Link
-``` cv2.VideoCapture('rtsp://username:password@camera_ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp')  ```
+<code>
+	pip install -r requirements.txt 
+</code>
 
-### Example RTSP Link
-``` cv2.VideoCapture('rtsp://mamun:123456@101.134.16.117:554/user=mamun_password=123456_channel=0_stream=0.sdp') ```
+### Config users
 
-### Change Channel Number to Change the Camera
-``` cv2.VideoCapture('rtsp://mamun:123456@101.134.16.117:554/user=mamun_password=123456_channel=1_stream=0.sdp') ```
+Add users with username and password by running the config script
+<code>
+	python config.py --user user --password password
+</code>
 
-### Display the resulting frame in browser
-``` cv2.imencode('.jpg', frame)[1].tobytes() ```
+### Run flask server
 
-### Or this one
-```
-net , buffer = cv2.imencode('.jpg', frame)
-buffer.tobytes()              
-```
+Now just run the flask app to activate the webserver.
 
-### [Reference](https://blog.miguelgrinberg.com/post/video-streaming-with-flask)
+<code>
+	python app.py
+</code>
