@@ -40,5 +40,5 @@ Now just run the flask app to activate the webserver. \
 </code>
 
 Go to 
-[localhost:8848/login](localhost:8848/login)
+[localhost:8848/login](http://localhost:8848/login)
 to login and view webcam stream.
