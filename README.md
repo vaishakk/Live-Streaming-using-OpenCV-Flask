@@ -13,11 +13,13 @@ Start a new env. \
 <code>
 	python virtualenv /path/to/env
 </code>
+
 Activate env. \
 <code>
 	cd /path/to/env/
 	source bin/activate
 </code>
+
 Install dependencies. \
 <code>
 	pip install -r requirements.txt 
