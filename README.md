@@ -5,16 +5,18 @@ A Flask Web-App to stream live from local webcam. Users can added with username 
 On the server, make sure the webcam is connected and working. 
 ### Start a new virtualenv
 If virtualenv not installed, install it.
+
 <code>
 	pip install virtualenv
 </code>
 
 Start a new env
+
 <code>
 	python virtualenv /path/to/env
 </code>
 
-Install dependencies
+Install dependencies.
 
 <code>
 	pip install -r requirements.txt 
@@ -22,7 +24,8 @@ Install dependencies
 
 ### Config users
 
-Add users with username and password by running the config script
+Add users with username and password by running the config script.
+
 <code>
 	python config.py --user user --password password
 </code>
