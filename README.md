@@ -2,7 +2,7 @@
 A Flask Web-App to stream live from local webcam. Users can added with username and passowrd to enable secure login. Only logged in users can view the stream.
 
 ## How to?
-(Only works on a Mac. To make it work on other platforms change base_url in config.py)
+(Only works on a Mac. To make it work on other platforms change base_url in config.py) \
 On the server, make sure the webcam is connected and working. 
 ### Start a new virtualenv
 If virtualenv not installed, install it. \
