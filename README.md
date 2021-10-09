@@ -1,7 +1,6 @@
 # Secure Live Streaming of webcam footage using OpenCV and flask
 Say you want to see what your dog is doing while you are out. You might think about installing a new survillance camera in your living room. Well, I say, why do you what to buy a new camera when you can repurpose one of the many cameras that you happen to have already? \
 This project helps you to do just that. With this program you could use a webcam connected to your computer for survillance, streaming live feed from your home to your phone or laptop securely with support for viewing the feed simultaneously on multiple devices.
-A Flask Web-App to stream live from local webcam. Users can added with username and passowrd to enable secure login. Only logged in users can view the stream.
 
 ## How to?
 (Only works on a Mac. To make it work on other platforms change base_url in config.py) \
@@ -44,4 +43,6 @@ Now just run the flask app to activate the webserver. \
 
 Go to 
 [localhost:8848/login](http://localhost:8848/login)
-to login and view webcam stream.
+to login and view webcam stream. \
+
+To view the feed over the internet, forward tcp port 8848 on your router to the computer connected to the webcam.
